@@ -1,0 +1,247 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+
+.first_menuBar {
+    display: flex;
+    width: 700px;
+    height: 64px;
+    margin: 0 380px 0 380px;
+    /*background-color: red;*/
+}
+
+.second_menuBar1 {
+    display: flex;
+}
+
+@media screen and (min-width: 768px)
+.second_menuBar1 {
+    max-width: 120rem;
+    height:6.4rem;
+}
+
+.homepage_logo {
+    /*background-color: red;*/
+}
+
+.page_logo2 {
+    height: 50px;
+    width: 65px;
+    margin: 4px 0 0 -8px;
+}
+
+.menu2 {
+    position: absolute;
+    display: flex;
+    margin: 3px 0 0 0;
+    right: 920px;
+    font-weight: bold;
+    color: #4d5159;
+}
+
+.menu2 > li {
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 15px;
+}
+
+.onemenu1 {
+    display: inline-block;
+    margin: 0;
+}
+
+.onemenu {
+    color: #FA6616;
+    /*background-color: red;*/
+}
+
+@media screen and (min-width: 768px)
+.onemenu {
+    line-height: 1.32;
+    font-size: 1.8rem;
+    letter-spacing: -2%;
+}
+
+/*.onemenu:hover{*/
+/*      color: #868B94;*/
+/*  }*/
+
+.twomenu {
+    color: black;
+}
+
+.twomenu:hover{
+    color: #868B94;
+}
+.threemenu {
+    color: black;
+}
+
+.threemenu:hover{
+    color: #868B94;
+}
+
+.fourmenu {
+    color: black;
+}
+
+.fourmenu:hover{
+    color: #868B94;
+}
+
+.fivemenu {
+    color: black;
+}
+
+.fivemenu:hover{
+    color: #868B94;
+}
+
+.searchButton4 {
+    position: absolute;
+    display: flex;
+    height: 100px;
+    width: 288px;
+    right: 498px;
+    top: 62px;
+}
+
+.searchButton3 {
+    width: 288px;
+    height: 40px;
+    border-radius: 6px;
+    border-width: 0px;
+    background-color: #F2F3F6;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-top: -50px;
+    letter-spacing: -0.02rem;
+}
+
+.searchButton3:focus {
+    outline: none;
+}
+
+.charButton2 {
+    position: absolute;
+    display: flex;
+    height: 40px;
+    width: 98px;
+    right: 385px;
+    top: 10px;
+}
+
+.charButton1 {
+    height: 40px;
+    width: 98px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: #DFE0E4;
+    border-radius: 5px;
+    transition: background-color 0.1s;
+}
+
+.charButton1:hover {
+    background-color: #F6F7F9;
+}
+
+.background {
+    position: relative;
+    background-color: #FFF1AA;
+    width: 100%;
+    height: 315px;
+}
+
+.cover-contents1 {
+    position: absolute;
+    width: 300px;
+    margin: -266px 0 0 567px;
+    text-align: left;
+}
+
+.cover-title1 {
+    font-size: 34px;
+    line-height: 3.2rem;
+    letter-spacing: -0.9px;
+}
+
+.cover-title2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: -6px;
+    letter-spacing: -0.7px;
+}
+
+.cover-img {
+    /*background-color: yellow;*/
+    width: 416px;
+    height: 315px;
+    transform: translate(460px, -157.5px);
+}
+
+.main_page1 {
+    /*background-color: red;*/
+    width: 270px;
+    /*text-align: center;*/
+    margin: -250px 0 0 820px;
+    font-size: 21px;
+}
+
+.cards_wrap {
+    display: flex;
+}
+
+.card_list {
+    margin: 40px -530px 0 572px;
+}
+
+.card_img {
+    height: 223px;
+    width: 223px;
+    overflow: hidden;
+    border: 1px solid #868B94;
+    border-radius: 15px;
+}
+
+.card_title {
+    font-size: 16px;
+    font-weight: 500;
+    height: 24px;
+    width: 223px;
+    margin: 7px 4px 4px 0;
+    letter-spacing: -0.3px;
+}
+
+.card_price {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 8px 4px 0;
+    letter-spacing: -0.1px;
+}
+
+.card_name {
+    font-size: 13px;
+    margin: 7px 0 4px 0;
+    letter-spacing: -0.3px;
+}
+
+.card_count {
+    font-size: 13px;
+    height: 19px;
+    width: 223px;
+    letter-spacing: -0.5px;
+    margin: 4px 0 4px 0;
+}
+
+.card_count > span {
+    color: #868e96;
+}
