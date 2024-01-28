@@ -9,7 +9,6 @@
 }
 /*초기화*/
 
-
 .first_menuBar {
     position: fixed;
     z-index: 1000;
@@ -23,7 +22,7 @@
 }
 
 .page {
-    margin-top: 70px;
+    margin-top: 64px;
 }
 
 .second_menuBar1 {
@@ -86,14 +85,14 @@
 }
 
 .twomenu {
-    color: #212124;
+    color: #4d5159;
 }
 
 .twomenu:hover{
     color: #868B94;
 }
 .threemenu {
-    color: #212124;
+    color: #4d5159;
 }
 
 .threemenu:hover{
@@ -101,7 +100,7 @@
 }
 
 .fourmenu {
-    color: #212124;
+    color: #4d5159;
 }
 
 .fourmenu:hover{
@@ -109,7 +108,7 @@
 }
 
 .fivemenu {
-    color: #212124;
+    color: #4d5159;
 }
 
 .fivemenu:hover{
@@ -229,8 +228,9 @@
     height: 223px;
     width: 223px;
     overflow: hidden;
-    border: 1px solid #868B94;
+    border: 0px solid #868B94;
     border-radius: 15px;
+
 }
 
 .card_title {
@@ -326,6 +326,10 @@
     width: 28%;
 }
 
+.footer_list_item a:hover {
+    text-decoration: underline;
+}
+
 .footer_list1:last-child {
     margin-right: 15%;
 }
@@ -358,38 +362,162 @@
     margin-right: 0;
 }
 
+.download_button:hover {
+    color: #898A8D;
+}
+
 .IOS_button {
     display: flex;
     width: 147px;
     height: 43px;
-    font-size: 15px;
+    font-size: 14px;
     margin: 0 10px 0 0;
-    padding-top: 10px;
+    padding-top: 13px;
     background-color: #F2F3F6;
     border-radius: 5px;
     border: none;
+    letter-spacing: 0.8px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .IOS_button>img {
     wigth: 21px;
     height: 21px;
-    margin: 0 5px 0 25px;
+    margin: -3px 5px 0 25px;
 }
 
 .Android_button {
     display: flex;
     width: 147px;
     height: 43px;
-    font-size: 15px;
+    font-size: 14px;
     margin: 0 0 0 0;
-    padding-top: 11px;
+    padding-top: 14px;
     background-color: #F2F3F6;
     border-radius: 8px;
     border: none;
+    letter-spacing: 0.7px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .Android_button > img {
     wigth: 30px;
     height: 30px;
-    margin: -4px 0 0 13px;
+    margin: -7px 0 0 13px;
+}
+
+.footer_page6 {
+    font-size: 13.008px;
+    /*color: #868B94;*/
+    display: inline-block;
+    /*background-color: red;*/
+    margin: 25px 0 0 0;
+    line-height: 1.5;
+    letter-spacing: -0.4px;
+    color: #F8F9FA;
+
+}
+
+.footer_page8 {
+    display: flex;
+    width: 300px;
+    height: 33px;
+    margin-left: 510px;
+    margin-top: -105px;
+    margin-bottom: 115px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.facebook_logo {
+    margin: 0 16px 0 0;
+}
+
+.instagram_logo {
+    margin: 0 16px 0 0;
+}
+
+.youtube_logo {
+    margin: 0 16px 0 0;
+}
+
+.blog_logo {
+    margin: 0 16px 0 0;
+}
+
+.footer_page8:last-child {
+    margin-right: 0;
+}
+
+.footer_status1 > footer_status_word {
+    color: #F2F3F6;
+}
+
+.footer_page5 {
+    display: block;
+    width: 800px;
+    margin-top: 28px;
+    margin-left: -15px;
+    height: 280px;
+    border-top: 1px solid #F2F3F6;
+}
+
+.footer_status5 {
+    margin: 18px 0 0 0;
+}
+
+.footer_status5 > a {
+    margin-right: 13px;
+    color: #868b94;
+    font-weight: 600;
+}
+
+.footer_status5 a:hover {
+    text-decoration: underline;
+}
+
+.footer_page9 {
+    display: flex;
+    font-size: 13px;
+    margin: -25px 40px 70px 0;
+}
+
+.footer_page9 a {
+    margin: 0 15px 0 0;
+    color: #868b94;
+    font-weight: 600;
+}
+
+.footer_page9 a:hover {
+    text-decoration: underline;
+}
+
+.select_country > label {
+    color: #868b94;
+    display: flex;
+    border-radius: 0.4rem;
+    margin: 4px 0 0 8px;
+}
+
+.select_country > label > div {
+    width: 40px;
+    color: #868b94;
+    margin: -1px 0 0 4px;
+    font-size: 13px;
+}
+
+.select_country > label > svg {
+    color: #868b94;
+}
+
+.footer_status_word {
+    color: #868b94;
+    font-style: normal;
+}
+
+.footer_status_word > b {
+    color: #868b94;
+    font-style: normal;
 }
