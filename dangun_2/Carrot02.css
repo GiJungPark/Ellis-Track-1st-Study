@@ -11,14 +11,24 @@
 
 
 .first_menuBar {
+    position: fixed;
+    z-index: 1000;
     display: flex;
-    width: 700px;
+    width: 100%;
+    top: 0;
     height: 64px;
-    margin: 0 380px 0 380px;
+    margin: 0 380px 0 0;
+    text-align: center;
+    background-color: white;
+}
+
+.page {
+    margin-top: 70px;
 }
 
 .second_menuBar1 {
     display: flex;
+    margin: 0 0 0 380px;
 }
 
 @media screen and (min-width: 768px)
@@ -131,7 +141,7 @@
     outline: none;
 }
 
-.charButton1 {
+.chatButton1 {
     position: absolute;
     display: flex;
     height: 40px;
@@ -140,7 +150,7 @@
     top: 12px;
 }
 
-.charButton2 {
+.chatButton2 {
     height: 40px;
     width: 98px;
     font-size: 16px;
@@ -152,7 +162,7 @@
     padding-bottom: 1px;
 }
 
-.charButton1:hover {
+.chatButton1:hover {
     background-color: #F6F7F9;
 }
 
@@ -292,4 +302,94 @@
 
 .popular_search_list_item {
     margin: 0 0 0 35px;
+}
+
+.footer_page2 {
+    height: 257.969px;
+    width: 768px;
+    padding: 4rem 0;
+    margin-left: 583px;
+    /*background-color: green;*/
+}
+
+.footer_list1 {
+    display: flex;
+    flex-direction: row;
+    width: 464px;
+    height:257.969px;
+    max-width: 76.8rem;
+
+}
+
+.footer_list_item {
+    height: 257.969px;
+    width: 28%;
+}
+
+.footer_list1:last-child {
+    margin-right: 15%;
+}
+
+.footer_list_item > li {
+    font-size: 14px;
+    margin: 0 0 33px 0;
+}
+
+.footer_page4 {
+    /*background-color: red;*/
+    float: right;
+    flex-direction: column;
+    display: flex;
+    width: 320px;
+    margin-top: -275px;
+}
+
+.carrot_download {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 11px 0;
+}
+
+.download_button {
+    display: flex;
+}
+
+.download_button:last-child {
+    margin-right: 0;
+}
+
+.IOS_button {
+    display: flex;
+    width: 147px;
+    height: 43px;
+    font-size: 15px;
+    margin: 0 10px 0 0;
+    padding-top: 10px;
+    background-color: #F2F3F6;
+    border-radius: 5px;
+    border: none;
+}
+
+.IOS_button>img {
+    wigth: 21px;
+    height: 21px;
+    margin: 0 5px 0 25px;
+}
+
+.Android_button {
+    display: flex;
+    width: 147px;
+    height: 43px;
+    font-size: 15px;
+    margin: 0 0 0 0;
+    padding-top: 11px;
+    background-color: #F2F3F6;
+    border-radius: 8px;
+    border: none;
+}
+
+.Android_button > img {
+    wigth: 30px;
+    height: 30px;
+    margin: -4px 0 0 13px;
 }
