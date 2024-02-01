@@ -1,0 +1,77 @@
+/* 헤더 */
+header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+
+}
+.container {
+    width: 1200px;
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.container nav {
+    padding-right: 10rem;
+}
+.container nav ul {
+    font-size: 18px;
+}
+.container nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container nav ul li a {
+    text-decoration: none;
+    color: #4d5159;
+}
+
+.container nav ul li a:hover {
+    color: #4d515980;
+}
+
+.container nav ul li a.content3{
+    color: #ff6f0f;
+    font-style: normal;
+    font-weight: 700;
+    font-size:large;
+    background-color: white;
+    border: none;
+}
+
+.container nav ul li a.content3:hover{
+    color: #ff6f0f;
+}
+
+.container .search input {
+    width: 264px;
+    height: 22px;
+    padding: 9px 12px;
+    border: none;
+    background-color: #f2f3f6;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container .search a button {
+    margin-left: 20px;
+    padding: 8px 16px;
+    border: 1px solid #d1d3d8;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.container .search a button:hover {
+    background-color: #f2f3f6;
+}
