@@ -1,3 +1,9 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 메인 배너 시작 */
 .main_banner {
     background-color: #f7f1eb;
     display: block;
@@ -20,4 +26,45 @@
 .main_banner_text {
     line-height: 1.5;
     font-size: 2rem;
+}
+/* 메인 배너 끝 */
+
+/* 동네업체 섹션 시작 */
+.dongne_title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.dongne_tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.tab__item {
+    padding: 0.6rem 1.3rem;
+    margin-right: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 2rem;
+}
+
+.tab__item.active {
+    display: inline-block;
+    border: 1px solid #212124;
+    background-color: #212124;
+    color: #fff;
+}
+
+.tab__content-wrapper {
+    padding: 1rem;
+}
+
+.tab__content {
+    display:none;
+}
+
+.tab__content.active {
+    display: block;
 }
