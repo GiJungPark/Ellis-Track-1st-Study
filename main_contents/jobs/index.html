@@ -6,14 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./img/_contentweaver.ico">
+    <link rel="stylesheet" href="../../css/jobs_reset.css">
+    <link rel="stylesheet" href="../../css/jobs_style.css">
+    <link rel="icon" type="image/x-icon" href="../../images/jobs/jobs_contentweaver.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script defer src="modal.js"></script>
-    <script defer src="modal2.js"></script>
-    <script defer src="slide.js"></script>
+    <script defer src="../../script/jobs_modal.js"></script>
+    <script defer src="../../script/jobs_slide.js"></script>
+    <script src="../../script/includeHTML.js"></script>
     <title>당신 근처의 당근</title>
 </head>
 <body>
@@ -24,11 +24,13 @@
         <p> 모바일에서만 이용할 수 있어요.<br>
             휴대전화의 카메라 또는 당근 앱으로 QR코드를 촬영해주세요.</p>
         <div class="modal_qr">
-            <img src="./img/QRcode.ico">
+            <img src="../../images/jobs/jobs_QRcode.ico">
         </div>
-        <img src="./img/closebutton.ico" class="close_btn">
+        <img src="../../images/jobs/jobs_closebutton.ico" class="close_btn">
     </div>
 </div>
+<div include-html="../../html/header.html"></div>
+<script>includeHTML();</script>
 <section class="main">
     <div class="main1">
         <div class="main_content">
@@ -44,12 +46,12 @@
                 </button>
             </div>
         <div class="main1_image">
-            <img src="./img/main1_image.ico" alt="none">
+            <img src="../../images/jobs/jobs_main1_image.ico" alt="none">
         </div>
     </div>
     <div class="main2">
         <div class="banner1">
-            <a href="https://daangn-jobs-campaign-2023.karrotwebview.com/applicant/"><img src="./img/job_banner1.ico"></a>
+            <a href="https://daangn-jobs-campaign-2023.karrotwebview.com/applicant/"><img src="../../images/jobs/jobs_banner1.ico"></a>
         </div>
         <h2>인기 당근알바</h2>
         <div class="item1-list">
@@ -196,7 +198,7 @@
         </div>
         <div class="banner2">
             <div class="banner2_content">
-                <img src="./img/banner2.ico">
+                <img src="../../images/jobs/jobs_banner2.ico">
                 <p>대규모 채용이 필요하다면 <br>당근알바 기업용 서비스에 대해 알아보세요!</p>
             </div>
             <div class="banner2_content2">
@@ -349,14 +351,14 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="banner3_content">
-                        <img src="./img/banner3_1.ico">
+                        <img src="../../images/jobs/jobs_banner3_1.ico">
                         <p>당근알바 이용방법이 궁금하다면<br>지금 바로 알아보세요!</p>
                         <a href="https://www.daangn.com/kr/jobs/about/"><button>이용방법 알아보기</button></a>
                     </div>
                 </div>
                     <div class="swiper-slide">
                         <div class="banner3_content2">
-                            <img src="./img/banner3_2.ico">
+                            <img src="../../images/jobs/jobs_banner3_2.ico">
                             <p>우리동네 알바가 궁금하다면<br>당근에서 바로 찾아보세요!</p>
                             <button class="modal_btn2">앱 다운로드 하기</button>
                         </div>
