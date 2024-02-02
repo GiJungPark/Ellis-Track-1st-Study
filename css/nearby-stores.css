@@ -62,9 +62,14 @@ a {
 }
 
 .tab__content {
-    display:none;
+    /* display: none; */
 }
 
 .tab__content.active {
     display: block;
+}
+
+.dongne_all_item_thumbnail img {
+    width: 78px;
+    height: 78px;
 }
