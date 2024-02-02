@@ -1,22 +1,20 @@
-var slider = document.querySelector("#slider");
-var slides = slider.querySelector(".slides");
-var slide = slides.querySelectorAll(".slide");
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
 
-var currentSlide = 0;
+  loop: true,
 
-setInterval(function() {
-    var from = -(1024 * currentSlide);
-    var to = from - 1024;
-    slides.animate({
-        marginLeft: [from + "px", to + "px"]
-    }, {
-        duration: 5000,
-        easing: "ease",
-        iterations: 1,
-        fill: "both"
-    });
-    currentSlide++;
-    if (currentSlide === (slide.length - 1)) {
-        currentSlide = 0;
-    }
-}, 5000);
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    //클릭 가능여부
+    clickable: true,
+
+  },
+
+  autoplay: {
+     delay: 5000,
+   },
+
+
+
+});
