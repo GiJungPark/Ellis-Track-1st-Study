@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    width:100%
+    width:100%;
     position: relative;
 }
 
@@ -163,6 +163,7 @@ header {
 }
 
 .main2 h2{
+    border: 2px solid red;
     font-size: 1.5rem;
     line-height: 1.5;
     font-weight: 700;
@@ -171,6 +172,7 @@ header {
 }
 
 .item1-list {
+    border: 2px solid red;
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 2fr));
     grid-auto-rows: minmax(100px, 1fr);
@@ -178,6 +180,7 @@ header {
     text-align: left;
 }
 .main2_content1{
+    border: 2px solid red;
     height:110px;
     padding:1.25rem 0;
 }
