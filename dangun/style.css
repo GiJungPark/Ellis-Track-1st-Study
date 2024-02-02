@@ -6,7 +6,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    width:100%
+    width:100%;
     position: relative;
 
 }
@@ -140,6 +140,7 @@ body {
     overflow: hidden;
 }
 
+
 .main .main2 h2{
     font-size: 2.5rem;
     line-height: 1.5;
@@ -148,6 +149,7 @@ body {
     text-align: left;
 }
 
+
 .main .main2 .item1-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 2fr));
@@ -155,6 +157,7 @@ body {
     column-gap: 20px;
     text-align: left;
 }
+
 .main .main2 .item1-list .main2_content1{
     height:110px;
     padding:1.25rem 0;
