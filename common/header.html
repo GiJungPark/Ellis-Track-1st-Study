@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,32 @@
 
     <!-- css 가져오기 -->
     <link rel="stylesheet" href="../../common/header.css">
+    <script src="../script/includeHTML.js"></script>
+    <script>applyDynamicCSS()</script>
     
 </head>
+
 <body >
+    
     <div id="header">
         <div id="header_wrap">
             <div id="header_content">
-                <img class="logo_image" onclick = "location.href = '../main/index.html'" src="../../images/common/long_logo.png" alt="logo" width="65" height="auto">
+                <img class="logo_image" onclick = "handleImageClick('../main/index.html')" src="../../images/common/long_logo.png" alt="logo" width="65" height="auto">
             </div>
             <div id="header_content">
-                <button class="header_menu" onclick = "location.href = '../fleamarket/index.html'">중고거래</button>
+                <button id="fleamarketButton" class="header_menu" onclick = "handleImageClick('../fleamarket/index.html')">중고거래</button>
             </div>
             <div id="header_content">
-                <button class="header_menu" onclick = "location.href = '../nearby-stores/index.html'">동네업체</button>
+                <button id="nearbyStoresButton" class="header_menu" onclick = "handleImageClick('../nearby-stores/index.html')">동네업체</button>
             </div>
             <div id="header_content">
-                <button class="header_menu" onclick = "location.href = '../jobs/index.html'">알바</button>
+                <button id="jobsButton" class="header_menu" onclick = "handleImageClick('../jobs/index.html')">알바</button>
             </div>
             <div id="header_content">
-                <button class="header_menu" onclick = "location.href = '../realty/index.html'">부동산 직거래</button>
+                <button id="realtyButton" class="header_menu" onclick = "handleImageClick('../realty/index.html')">부동산 직거래</button>
             </div>
             <div id="header_content">
-                <button class="header_menu_selected" onclick = "location.href = '../car/index.html'">중고차 직거래</button>
+                <button id="carButton" class="header_menu" onclick = "handleImageClick('../car/index.html')">중고차 직거래</button>
             </div>
             <div id="header_content">
                 <form onsubmit="submitForm(event)">
@@ -38,8 +43,8 @@
             </div>
         </div>
     </div>
-
 </body>
+
 </html>
 
 
