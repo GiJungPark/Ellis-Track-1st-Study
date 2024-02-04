@@ -80,190 +80,283 @@ b {
 ul {
     list-style-type: disc;
 }
+/* */
 
-/*시작*/
-.body_head{
-	margin-top: 64px;
-	display: flex;
-	flex-direction: row;
-    height: 315px;
-    background-color: #d2edfa;
+
+/* header-section */
+/*
+#header {
+    height: 6.4rem
+}
+#header_wrap {
+
+    height: 100%;
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#header_content {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.body_head_main{
-	margin-left: 10px;
-	margin-bottom: 50px;
+#header_content form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.main_title{
-	padding-top: 47px;
+img {
+    display: block;
+    margin: 0 auto;
 }
 
-.sub_title {
-    padding-top: 16.5px;
-    padding-bottom: 26px;
-    font-size: 17.5px;
-    font-weight:500;
-    width: 100%;
-}
-
-.mycar_sell_button{
-    background-color: #ff6f0f;
-    color: white;
+.header_menu_selected {
+    color: #ff6f0f;
+    font-style: normal;
+    font-weight: 700;
+    font-size: large;
+    background-color: white;
     border: none;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 4px;
-    display: inline-block;
-    padding: 7.5px 10px;
 }
 
-.main_car_image {
-	margin-left: 55px;
-	margin-top: 17px;
-}
-
-/* -------- 인기 중고차 문단 시작 -------- */
-
-.popular{
-	margin: 65px auto;
-	width: 768px;
-	justify-content: center;
-}
-
-.popular_title{
-	font-size: 17px;
-	margin-bottom: 45px;
-}
-
-
-.popular_main_first{    /* 중고차 게시물 첫 번째 문단 */ 
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.popular_main_second{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-#popular_car_left{        /* 중고차 왼쪽 줄 게시물 */ 
-	width: 50%;
-	margin-bottom: 40px;
-	cursor: pointer;
-}
-
-#popular_car_image_left{
-	margin-right: 15px;
-	float: left;
-}
-
-#popular_car_image_left img{
-	width: 108px;
-	height: 108px;
-	object-fit: cover;
-	border-radius: 7%;
-}
-
-#popular_car_explain_left{
-	display: inline;
-}
-
-
-#popular_car_right{        /* 중고차 오른쪽 줄 게시물 */ 
-	width: 50%;
-	margin-bottom: 40px;
-	cursor: pointer;
-}
-
-#popular_car_image_right{
-	float: left;
-	margin-left: 15px;
-	margin-right: 15px;
-}
-
-#popular_car_image_right img{
-	width: 108px;
-	height: 108px;
-	object-fit: cover;
-	border-radius: 7%;
-}
-
-#popular_car_explain_right{
-	display: inline;
-}
-
-/* ---------- 상품 설명 스타일 통일 ---------- */
-
-.line_1{
-	font-size: 17.6px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-}
-.line_2{
-	margin-top: 6px;
-	margin-bottom: 6px;
-	font-size: 13.7px;
-	color: gray;
-	
-}
-.line_3{
-	font-weight: bold;
-	font-size: 16px;
-}
-
-/* -------------------- */
-
-.advertisement{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	background-color: #009ceb1a;
-	height: 56.68px;
-	padding: 28px 24px 28px 33px;
-	margin-top: 24px;
-	margin-bottom: 64px;
-}
-
-.advertisement_image img{
-	width: 69.75px;
-	margin-right: 20px;
-}
-
-.advertisement_explain{
-	font-size: 20px;
-	font-weight: 700;
-	margin-top: 1px;
-}
-
-.app_download_button{
-    background-color: #ff6f0f;
-    color: white;
+.header_menu {
+    color: #4d5159;
+    font-style: normal;
+    font-weight: 700;
+    font-size: large;
+    background-color: white;
     border: none;
-	margin-left: 154px;
-	margin-top: 7px;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 4px;
-    display: inline-block;
-	width: 125px;
-	height: 40px;
-	
 }
 
-/* ---------- footer ---------- */
+.chat_button {
+    border: 0.5px solid #b8bcc3;
+    border-radius: 0.3rem;
+    font-size: 1.0rem;
+    font-weight: 600;
+    margin: auto;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+*/
+/* home-main-top-section */
+
+#home-main-section-top {
+    padding-top: 24px;
+    background-color: #FFFAE0;
+}
+#home-main-section-top #home-main-top {
+    width: 1024px;
+    height: 760px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #FFFAE0;
+}
+
+#home-main-desc {
+
+}
+
+#home-main-section-top .home-main-title {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 73px;
+    padding-top: 200px;
+    margin-top: 64px;
+    margin-bottom: 3.2rem;
+}
+
+#home-main-section-top .service-desc {
+    font-weight: 400;
+    font-size: 20px;
+    color: #7c7c7c;
+    line-height: 30px;
+}
+
+#download-buttons {
+    margin-top: 20px;
+}
+
+#download-buttons .fixed-download-button {
+    width: 180px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #FF6F0F;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 14px 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+#download-buttons .fixed-download-button .fixed-google-play,
+#download-buttons .fixed-download-button .fixed-apple-store {
+    fill: #fff;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#download-buttons .fixed-download-button .fixed-download-text {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 700;
+    vertical-align: middle;
+    line-height: 28px;
+}
+
+#download-buttons .fixed-download-button:hover {
+    background-color: #f06000;
+}
+
+#home-main-section-top .home-main-image-top {
+    position: absolute;
+    right: -84px;
+    bottom: 0;
+    width: 655px;
+    height: 800px;
+}
+
+/* home-main-section */
 
 
+#home-main-section {
+
+}
+
+.home-main-section .home-main-content {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-main-section .home-main-image {
+    display: inline-block;
+}
+
+.home-main-section .home-main-image-01 {
+    background-size: 655px 750px;
+    width: 655px;
+    height: 750px;
+}
+
+.home-main-section .home-main-image-02 {
+    background-size: 655px 750px;
+    width: 650px;
+    height: 750px;
+}
+
+.home-main-section .home-main-image-03 {
+    background-size: 655px 750px;
+    width: 650px;
+    height: 750px;
+}
+
+.home-main-section .home-main-image-04 {
+    background-size: 655px 750px;
+    width: 650px;
+    height: 750px;
+}
+
+.home-main-section .service-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #FF6F0F;
+    margin-bottom: 10px;
+}
+
+.home-main-section .home-main-title {
+    font-size: 42px;
+    line-height: 57px;
+    margin-bottom: 10px;
+}
+
+.home-main-section .service-desc {
+    font-weight: 400;
+    font-size: 20px;
+    color: #7c7c7c;
+    line-height: 30px;
+}
+
+.home-main-section .home-buttons {
+    margin-top: 3.2rem;
+    white-space: nowrap; /* 줄 바꿈 방지 */
+}
+
+.home-main-section .home-buttons .button-text {
+    font-size: 18px;
+    line-height: 23.76px;
+    font-weight: 700;
+}
+
+.home-main-section .home-buttons .home-button {
+    background-color: #E9ECEF;
+    color: #212529;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 12px 2rem;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.home-main-section .home-buttons .home-button:hover {
+    background-color: #dee2e6;
+}
+
+.home-main-section .home-main-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.home-main-section .home-story-list {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.home-main-section .home-story-list .home-story-list-item {
+    margin-right: 1rem;
+    margin-left: 0;
+    width: 124px;
+}
+
+.home-main-section .home-story-list .icon-story {
+    width: 56px;
+    height: 56px;
+    background-size: 56px 56px;
+}
 
 
+.home-main-section .home-story-list .item-desc {
+    font-weight: 400;
+    font-size: 13px;
+    color: #7c7c7c;
+    line-height: 17px;
+}
 
+.home-main-section .home-story-list .item-title {
+    font-size: 1.4rem !important;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+}
 
 /* footer-section */
 
