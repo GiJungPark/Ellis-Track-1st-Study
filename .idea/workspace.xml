@@ -4,7 +4,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49c01187-4cf9-4af5-9783-4c681060b664" name="Changes" comment="" />
+    <list default="true" id="49c01187-4cf9-4af5-9783-4c681060b664" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Ellis-Track-1st-Study.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/jobs_reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/jobs_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/realty.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/slide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/QRcode.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/android.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/apple.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/banner3_2.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/closebutton.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/jobs_QRcode.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/jobs_android.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/jobs_apple.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/jobs_banner1.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/jobs_banner2.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/jobs_banner3_1.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/jobs_banner3_2.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/jobs_closebutton.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/jobs_contentweaver.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/jobs_main1_image.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/jobs_main1_image2.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jobs/jobs_top_left.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/realty/realty_head_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_contents/main/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_contents/realty/realty.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/jobs_modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/jobs_slide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/car.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/car.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fleamarket.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fleamarket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jobs.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/jobs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/common/daangn_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/car/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main/content-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/content-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main/content-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/content-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main/content-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/content-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main/content-4.webp" beforeDir="false" afterPath="$PROJECT_DIR$/images/content-4.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main/content-main.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/content-main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main/header-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/header-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main/icon-story-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icon-story-1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main/icon-story-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icon-story-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main/icon-story-3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icon-story-3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/nearby-stores/dongne_banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_contents/car/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_contents/car/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_contents/fleamarket/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_contents/fleamarket/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_contents/jobs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_contents/jobs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/includeHTML.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/includeHTML.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/jobs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Carrot02-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fleamarket2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Carrot02-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_contents/fleamarket2/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +70,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -27,26 +84,36 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2bX9GhwUjlrW1OLpQeVurvPH2Je" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Soonduck/Desktop/하/코딩/코드 파일/Ellis-Track-1st-Study&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging main",
+    "last_opened_file_path": "C:/Users/Soonduck/Desktop/하/코딩/코드 파일/Car/src/dangun_2",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Soonduck\Desktop\하\코딩\코드 파일\Ellis-Track-1st-Study\main_contents" />
+      <recent name="C:\Users\Soonduck\Desktop\하\코딩\코드 파일\Ellis-Track-1st-Study\images\fleamarket" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Ellis-Track-1st-Study" />
@@ -76,6 +143,29 @@
       <workItem from="1706432279735" duration="2531000" />
       <workItem from="1706446608371" duration="112000" />
       <workItem from="1706447361938" duration="8899000" />
+      <workItem from="1706527948825" duration="8125000" />
+      <workItem from="1706537690592" duration="342000" />
+      <workItem from="1706541826017" duration="12000" />
+      <workItem from="1706541863489" duration="9000" />
+      <workItem from="1706542954185" duration="30000" />
+      <workItem from="1706543049574" duration="41000" />
+      <workItem from="1706543416553" duration="19000" />
+      <workItem from="1706545480446" duration="224000" />
+      <workItem from="1706545718141" duration="125000" />
+      <workItem from="1706545859471" duration="4000" />
+      <workItem from="1706545869028" duration="115000" />
+      <workItem from="1706546644705" duration="1000" />
+      <workItem from="1706577119484" duration="13000" />
+      <workItem from="1706614950937" duration="7000" />
+      <workItem from="1706625641762" duration="4493000" />
+      <workItem from="1706630613809" duration="117000" />
+      <workItem from="1706700495903" duration="2460000" />
+      <workItem from="1706703070677" duration="5848000" />
+      <workItem from="1706749957330" duration="11000" />
+      <workItem from="1706873163176" duration="438000" />
+      <workItem from="1706873610297" duration="183000" />
+      <workItem from="1706873803019" duration="901000" />
+      <workItem from="1706874769908" duration="4632000" />
     </task>
     <servers />
   </component>

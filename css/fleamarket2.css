@@ -1,6 +1,9 @@
 * {
-    padding: 0;
-    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    color: black;
     outline: none;
 }
 
@@ -80,306 +83,116 @@ b {
 ul {
     list-style-type: disc;
 }
+/* */
+/*초기화*/
 
-/*시작*/
 
-#header{
-	width: 100%;
-	background-color: white;
-	position: fixed;
-	top: 0;
-    height: 64px;
+.used_main_title {
+    margin: 128px 0 0 0;
+    text-align: center;
+    letter-spacing: -0.8px;
+    font-size: 32px;
 }
 
-#header_wrap{
-    height : 100%;
-    margin: auto;
+.select-region-bar {
+    margin: 40px 0 30px 41%;
+    /*background-color: red;*/
+    width: 980px;
+    height: 45px;
+    text-align: center;
+}
+
+.select-region-bar select {
+    fong-family: Arial;
+    font-size: 17px;
+    width: 180px;
+    height: 45px;
+    border-radius: 5px;
+    border-color: #E9ECEF;
+    padding: 0 0 0 5px;
+}
+
+.select-region-bar select:last-child {
+    color: #C5CBD1;
+    background-color: #FAFBFB;
+}
+
+.card_lists {
+    width: 1010px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-	justify-content: center;
-	padding-right: 80px;
+    flex-wrap: wrap;
+    gap: 39.3px;
+    /*background-color: red;*/
 }
 
-#header_content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: 18px;
-	margin-bottom: 1px;
+.card_lists article {
+    margin: 0 0 60px 0;
+    letter-spacing: 0.1px;
 }
 
-#header_content form {
-display: flex;
-flex-direction: row;
-justify-content:space-evenly;
-align-items: center;
+.card_lists article img {
+    widht: 223px;
+    height: 223px;
+    border-radius: 1rem;
 }
 
-img{
-	display: block;
-	margin: 0 auto;
-}
-.logo_image{
-    margin: 15px 13px 22px 51px;
-}
-.header_menu_selected{
-	color: #ff6f0f;
-	font-style: normal;
-	font-weight: 700;
-	font-size:large;
-	background-color: white;
-	border: none;
+.used_main_cards_title {
+    font-size: 15px;
+    height: 24px;
+    width: 223px;
+    font-weight: 400;
+    padding: 8px 0 4px 0;
 }
 
-.header_menu{
-	color: #4d5159;
-	font-style: normal;
-	font-weight: 700;
-	font-size:large;
-	background-color: white;
-	border: none;
+.used_main_cards_price {
+    font-size: 15px;
+    font-weight: 700;
+    height: 22.5px;
+    width: 223px;
+    padding: 0 0 4px 0;
 }
 
-.search_input{
-	font-size: 15px;
-	height: 13px;
-	width: 250px;
-	padding: 12px;
-	margin-left: 130px;
-	margin-right: 13px;
-	border-radius: 0.6rem;
-	border: none;
-	outline: none;
-	background-color: #f2f3f6;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.used_main_cards_name {
+    font-size: 12.5px;
+    height: 19.5px;
+    width: 223px;
+    padding: 0 0 4px 0;
 }
 
-.chat_button{
-	border: 0.5px solid #b8bcc3;
-	border-radius: 0.3rem;
-	font-size: 16px;
-	font-weight: 600;
-	margin:auto;
-	width: 100px;
-	height: 40px;
-	display: flex;
-	justify-content: center;/*수평 가운데 정렬*/
-	align-items: center; /*수직 가운데 정렬*/
-	background-color: white;
+.used_main_cards_count {
+    font-size: 13px;
 }
 
-.chat_button:hover {
-	background-color:rgb(208, 208, 208);
-	cursor: pointer;
+.used_main_cards_count span {
+    color: #868E96;
 }
-
-.logo_image:hover {
-	cursor: pointer;
-}
-
-.header_menu:hover {
-	color:rgb(145, 145, 145);
-	cursor: pointer;
-}
-
-.header_menu_selected:hover {
-	cursor: pointer;
-}
-
-#orange_button:hover {
-	background-color: #ffae78;
-	cursor: pointer;
-}
-
-
-.body_head{
-	margin-top: 64px;
-	display: flex;
-	flex-direction: row;
-    height: 315px;
-    background-color: #d2edfa;
-    justify-content: center;
-    align-items: center;
-}
-
-.body_head_main{
-	margin-left: 10px;
-	margin-bottom: 50px;
-}
-
-.main_title{
-	padding-top: 47px;
-}
-
-.sub_title {
-    padding-top: 16.5px;
-    padding-bottom: 26px;
-    font-size: 17.5px;
-    font-weight:500;
-    width: 100%;
-}
-
-.mycar_sell_button{
-    background-color: #ff6f0f;
-    color: white;
-    border: none;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 4px;
-    display: inline-block;
-    padding: 7.5px 10px;
-}
-
-.main_car_image {
-	margin-left: 55px;
-	margin-top: 17px;
-}
-
-/* -------- 인기 중고차 문단 시작 -------- */
-
-.popular{
-	margin: 65px auto;
-	width: 768px;
-	justify-content: center;
-}
-
-.popular_title{
-	font-size: 17px;
-	margin-bottom: 45px;
-}
-
-
-.popular_main_first{    /* 중고차 게시물 첫 번째 문단 */ 
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.popular_main_second{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-#popular_car_left{        /* 중고차 왼쪽 줄 게시물 */ 
-	width: 50%;
-	margin-bottom: 40px;
-	cursor: pointer;
-}
-
-#popular_car_image_left{
-	margin-right: 15px;
-	float: left;
-}
-
-#popular_car_image_left img{
-	width: 108px;
-	height: 108px;
-	object-fit: cover;
-	border-radius: 7%;
-}
-
-#popular_car_explain_left{
-	display: inline;
-}
-
-
-#popular_car_right{        /* 중고차 오른쪽 줄 게시물 */ 
-	width: 50%;
-	margin-bottom: 40px;
-	cursor: pointer;
-}
-
-#popular_car_image_right{
-	float: left;
-	margin-left: 15px;
-	margin-right: 15px;
-}
-
-#popular_car_image_right img{
-	width: 108px;
-	height: 108px;
-	object-fit: cover;
-	border-radius: 7%;
-}
-
-#popular_car_explain_right{
-	display: inline;
-}
-
-/* ---------- 상품 설명 스타일 통일 ---------- */
-
-.line_1{
-	font-size: 17.6px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-}
-.line_2{
-	margin-top: 6px;
-	margin-bottom: 6px;
-	font-size: 13.7px;
-	color: gray;
-	
-}
-.line_3{
-	font-weight: bold;
-	font-size: 16px;
-}
-
-/* -------------------- */
-
-.advertisement{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	background-color: #009ceb1a;
-	height: 56.68px;
-	padding: 28px 24px 28px 33px;
-	margin-top: 24px;
-	margin-bottom: 64px;
-}
-
-.advertisement_image img{
-	width: 69.75px;
-	margin-right: 20px;
-}
-
-.advertisement_explain{
-	font-size: 20px;
-	font-weight: 700;
-	margin-top: 1px;
-}
-
-.app_download_button{
-    background-color: #ff6f0f;
-    color: white;
-    border: none;
-	margin-left: 154px;
-	margin-top: 7px;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 4px;
-    display: inline-block;
-	width: 125px;
-	height: 40px;
-	
-}
-
-/* ---------- footer ---------- */
-
-
-
-
-
 
 /* footer-section */
 
 #footer-root .executives-names {
     display: flex;
     align-items: center
+}
+
+#footer-root .executives-names span {
+    color: #868B94;
+}
+
+#footer-root .executives-names span b {
+    color: #868B94;
+}
+
+#footer-root .executives-info div {
+    color: #868B94;
+}
+
+#footer-root .executives-info div b {
+    color: #868B94;
+}
+
+#footer-root .company-address span {
+    color: #868B94;
 }
 
 #footer-root ._1s38h9c1 {
@@ -544,11 +357,15 @@ img{
 }
 
 #footer-root .separator {
-    margin: 0 0.4rem
+    margin: 0 0.4rem 0 0.4rem
 }
 
 #footer-root .company-address {
     font-style: normal
+}
+
+#footer-root .company-address .separator {
+    margin: 0 0.1rem 0 0;
 }
 
 #footer-root .terms-of-service {
@@ -566,7 +383,7 @@ img{
 }
 
 #footer-root .footer-link-text:not(:last-child) {
-    margin-right: 1.6rem
+    margin-right: 1.3rem
 }
 
 #footer-root .footer-link-text:hover {

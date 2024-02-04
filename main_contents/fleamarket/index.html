@@ -5,47 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <title>당신 근처의 당근</title>
-    <link rel="icon" href="img/Carrot_img.png">
-    <link rel="stylesheet" href="Carrot02.css">
+    <link rel="icon" href="../../images/fleamarket/Carrot_img.png">
+    <link rel="stylesheet" href="../../css/fleamarket.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:wght@700&display=swap');
     </style>
 
+    <!— include 함수 가져오기 —>
+    <script src="../../script/includeHTML.js"></script>
+
 </head>
 <body>
 
-<div id="header">
-    <div id="header_wrap">
-        <div id="header_content">
-            <img class="logo_image" onclick = "location.href = '#'" src="../CarPage/img/logo.png" alt="logo" width="65" height="auto">
-        </div>
-        <div id="header_content">
-            <button class="header_menu_selected">중고거래</button>
-        </div>
-        <div id="header_content">
-            <button class="header_menu">동네업체</button>
-        </div>
-        <div id="header_content">
-            <button class="header_menu">알바</button>
-        </div>
-        <div id="header_content">
-            <button class="header_menu">부동산 직거래</button>
-        </div>
-        <div id="header_content">
-            <button class="header_menu">중고차 직거래</button>
-        </div>
-        <div id="header_content">
-            <form onsubmit="submitForm">
-                <div class="search-input-area">
-                    <input class="search_input" type="text" placeholder="물품이나 동네를 검색해보세요">
-                </div>
-                <button onclick = "location.href='#'" type="submit" class="chat_button">채팅하기</button>
-            </form>
-        </div>
-    </div>
-</div>
-
+<!— 내비게이션 바 가져오기 시작 —>
+<div include-html="../../html/header.html"></div>
+<script>includeHTML();</script>
+<!— 내비게이션 바 가져오기 끝 —>
 
 <main>
     <div class="page">
@@ -64,7 +40,7 @@
                 </h4>
                 <div class="cover-img-part">
                     <span class="fleamarket-cover-img">
-                        <img class="cover-img" src="img/used_trade_page_img.webp" alt="믿을만한 이웃 간 중고거래">
+                        <img class="cover-img" src="../../images/fleamarket/used_trade_page_img.webp" alt="믿을만한 이웃 간 중고거래">
                     </span>
                 </div>
             </div>
@@ -81,7 +57,7 @@
                 <div class="cards_wrap">
                     <article class="card_list">
                         <a href="#">
-                            <img class="card_img" src="./img/card1.webp" href="" alt="카드 1">
+                            <img class="card_img" src="../../images/fleamarket/card1.webp" href="#" alt="카드 1">
                             <div class="card_words">
                                 <h2 class="card_title">유아용품 재고정리합니다</h2>
                                 <div class="card_price"> 10,000원 </div>
@@ -96,7 +72,7 @@
                     </article>
                     <article class="card_list">
                         <a href="#">
-                            <img class="card_img" src="./img/card2.webp" href="" alt="카드 1">
+                            <img class="card_img" src="../../images/fleamarket/card2.webp" href="#" alt="카드 1">
                             <div class="card_words">
                                 <h2 class="card_title">LG그램 중고노트북 판매합니다</h2>
                                 <div class="card_price"> 30,000원 </div>
@@ -111,7 +87,7 @@
                     </article>
                     <article class="card_list">
                         <a href="#">
-                            <img class="card_img" src="./img/card3.webp" href="" alt="카드 1">
+                            <img class="card_img" src="../../images/fleamarket/card3.webp" href="#" alt="카드 1">
                             <div class="card_words">
                                 <h2 class="card_title">책 재고정리</h2>
                                 <div class="card_price">3,000원</div>
@@ -126,7 +102,7 @@
                     </article>
                     <article class="card_list">
                         <a href="#">
-                            <img class="card_img" src="./img/card4.webp" href="" alt="카드 1">
+                            <img class="card_img" src="../../images/fleamarket/card4.webp" href="#" alt="카드 1">
                             <div class="card_words">
                                 <h2 class="card_title">다이슨 무선 청소기 판매합니다</h2>
                                 <div class="card_price"> 10,000원 </div>
@@ -141,7 +117,7 @@
                     </article>
                     <article class="card_list">
                         <a href="#">
-                            <img class="card_img" src="./img/card5.webp" href="" alt="카드 1">
+                            <img class="card_img" src="../../images/fleamarket/card5.webp" href="#" alt="카드 1">
                             <div class="card_words">
                                 <h2 class="card_title">🔥급하게 이사가서🔥</h2>
                                 <div class="card_price"> 나눔🧡 </div>
@@ -156,7 +132,7 @@
                     </article>
                     <article class="card_list">
                         <a href="#">
-                            <img class="card_img" src="./img/card6.webp" href="" alt="카드 1">
+                            <img class="card_img" src="../../images/fleamarket/card6.webp" href="#" alt="카드 1">
                             <div class="card_words">
                                 <h2 class="card_title">숲소리 주방놀이, 소꿉놀이 세...</h2>
                                 <div class="card_price"> 10,000원 </div>
@@ -171,7 +147,7 @@
                     </article>
                     <article class="card_list">
                         <a href="#">
-                            <img class="card_img" src="./img/card7.webp" href="" alt="카드 1">
+                            <img class="card_img" src="../../images/fleamarket/card7.webp" href="#" alt="카드 1">
                             <div class="card_words">
                                 <h2 class="card_title">묵은쌀30kg</h2>
                                 <div class="card_price"> 5,000원 </div>
@@ -186,7 +162,7 @@
                     </article>
                     <article class="card_list">
                         <a href="#">
-                            <img class="card_img" src="./img/card8.webp" href="" alt="카드 1">
+                            <img class="card_img" src="../../images/fleamarket/card8.webp" href="#" alt="카드 1">
                             <div class="card_words">
                                 <h2 class="card_title">하우스 한라봉 택배가능</h2>
                                 <div class="card_price"> 3,500원 </div>
@@ -201,7 +177,7 @@
                     </article>
                     <article class="card_list">
                         <a href="#">
-                            <img class="card_img" src="./img/card9.webp" href="" alt="카드 1">
+                            <img class="card_img" src="../../images/fleamarket/card9.webp" href="#" alt="카드 1">
                             <div class="card_words">
                                 <h2 class="card_title">나이키 의류 일괄 처분합니다.</h2>
                                 <div class="card_price"> 10,000원 </div>
@@ -216,7 +192,7 @@
                     </article>
                     <article class="card_list">
                         <a href="#">
-                            <img class="card_img" src="./img/card10.webp" href="" alt="카드 1">
+                            <img class="card_img" src="../../images/fleamarket/card10.webp" href="#" alt="카드 1">
                             <div class="card_words">
                                 <h2 class="card_title">추피 생활이야기 전집(60권) +...</h2>
                                 <div class="card_price"> 25,000원 </div>
@@ -231,7 +207,7 @@
                     </article>
                     <article class="card_list">
                         <a href="#">
-                            <img class="card_img" src="./img/card11.webp" href="" alt="카드 1">
+                            <img class="card_img" src="../../images/fleamarket/card11.webp" href="#" alt="카드 1">
                             <div class="card_words">
                                 <h2 class="card_title">건조기 세탁기 공기청정기 TV...</h2>
                                 <div class="card_price"> 250만원 </div>
@@ -246,7 +222,7 @@
                     </article>
                     <article class="card_list">
                         <a href="#">
-                            <img class="card_img" src="./img/card12.webp" href="" alt="카드 1">
+                            <img class="card_img" src="../../images/fleamarket/card12.webp" href="#" alt="카드 1">
                             <div class="card_words">
                                 <h2 class="card_title">아이폰 11 128GB</h2>
                                 <div class="card_price"> 360,000원 </div>
@@ -262,7 +238,7 @@
                 </div>
             </div>
             <div class="more_cards">
-                <a class="more_text" href="#" onclick="location.href='./Carrot02-2.html'"> 인기매물 더 보기</a>
+                <a class="more_text" href="#" onclick="location.href='../fleamarket2/index.html'"> 인기매물 더 보기</a>
             </div>
         </section>
         <div class="popular_search">
