@@ -42,6 +42,15 @@ function applyDynamicCSS() {
         }
     }
 
+    // 중고거래 추가 페이지인 경우
+    if (currentPagePath.includes('/contents/fleamarket_details/index.html')) {
+        var button = document.getElementById('fleamarketButton');
+        if (button) {
+            button.classList.remove('header_menu');
+            button.classList.add('header_menu_selected');
+        }
+    }
+
     // 동네 업체 페이지인 경우
     if (currentPagePath.includes('/contents/nearby-stores/index.html')) {
         var button = document.getElementById('nearbyStoresButton');
