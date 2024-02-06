@@ -86,7 +86,7 @@ ul {
 /* */
 /*초기화*/
 
-
+/*메인 내용*/
 .used_main_title {
     margin: 128px 0 0 0;
     text-align: center;
@@ -167,6 +167,7 @@ ul {
 .used_main_cards_count span {
     color: #868E96;
 }
+/*메인 내용*/
 
 /* footer-section */
 
