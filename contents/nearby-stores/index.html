@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <!-- 브라우저 스타일 초기화 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <!-- css 가져오기 -->
     <link rel="stylesheet" href="../../css/nearby-stores.css">
-    <!-- include 함수 가져오기 -->
+    <!-- script 가져오기 -->
     <script src="../../script/includeHTML.js"></script>
+    <script defer="defer" src="../../script/nearby-stores_tab.js"></script>
 
 </head>
+
 <body>
     <!-- 내비게이션 바 가져오기 시작 -->
     <div include-html="../../common/header.html"></div>
     <script>includeHTML();</script>
     <!-- 내비게이션 바 가져오기 끝 -->
-    
+
     <!-- 메인 배너 시작 -->
     <section class="main_banner">
-        <div class="main_banner_container"></div>
+        <div class="main_banner_container">
             <img class="main_banner_img" alt="배너" src="../../images/nearby-stores/dongne_banner.png">
             <h1 class="main_banner_text">
                 동네 이웃들이 <br>
@@ -31,7 +34,7 @@
                 우리 동네 사람들이 <br>
                 이용하는 업체를 찾아보세요.
             </span>
-    </div>
+        </div>
     </section>
     <!-- 메인 배너 끝 -->
 
@@ -41,34 +44,34 @@
             <p class="dongne_title">다양한 동네업체를 볼 수 있어요</p>
             <!-- 동네업체 탭 버튼 영역 -->
             <ul class="dongne_tab">
-                <li class="tab__item">
-                    <a href="#tab1">전체</a>
+                <li class="dongne_tab__item active">
+                    <a href="#categoryId=1">전체</a>
                 </li>
-                <li class="tab__item">
-                    <a href="#tab2">식당</a>
+                <li class="dongne_tab__item">
+                    <a href="#categoryId=2">식당</a>
                 </li>
-                <li class="tab__item">
-                    <a href="#tab3">카페</a>
+                <li class="dongne_tab__item">
+                    <a href="#categoryId=3">카페</a>
                 </li>
-                <li class="tab__item">
-                    <a href="#tab4">용달/이사</a>
+                <li class="dongne_tab__item">
+                    <a href="#categoryId=4">용달/이사</a>
                 </li>
-                <li class="tab__item">
-                    <a href="#tab5">뷰티/미용</a>
+                <li class="dongne_tab__item">
+                    <a href="#categoryId=5">뷰티/미용</a>
                 </li>
-                <li class="tab__item">
-                    <a href="#tab6">헬스/필라테스/요가</a>
+                <li class="dongne_tab__item">
+                    <a href="#categoryId=6">헬스/필라테스/요가</a>
                 </li>
             </ul>
 
             <!-- 동네업체 탭 내용 영역 -->
-            <div class="tab__content-wrapper">
+            <div class="dongne_tab__content-wrapper">
                 <!-- '전체' 탭 영역 -->
-                <div id="tab1" class="tab__content">
+                <div id="dongne_tab1" class="dongne_tab__content active">
                     <ul class="dongne_list_all">
                         <!-- 첫 번째 가게 네모 한 칸 시작 -->
-                        <li class="dongne_list_all_item_1">
-                            <a class="dongne_list_all_item_1" href="#">
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
                                 <div class="dongne_all_item_thumbnail">
                                     <!-- 가게 썸네일 -->
                                     <img src="../../images/nearby-stores/dongne_all_01.jpeg">
@@ -77,7 +80,7 @@
                                     <!-- 가게 이름 줄 -->
                                     <div class="dongne_all_item_name-wrapper">
                                         <span class="dongne_all_item_name">오떡순</span>
-                                        <span class="dongne_all_item_regin">신림동</span>
+                                        <span class="dongne_all_item_region">신림동</span>
                                     </div>
                                     <!-- 가게 세부 설명 줄 -->
                                     <span class="dongne_all_item_description">안녕하세요 신원시장 오떡순입니다 ^^</span>
@@ -87,21 +90,976 @@
                             </a>
                         </li>
                         <!-- 두 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_02.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">드롭플라워 - 송파</span>
+                                        <span class="dongne_all_item_region">가락1동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">✅ 신선한 생화를 저렴한 가격에 다양한 장소에서 픽업하실수 있습니다. (매장,역앞,공원앞,케이크집 등)</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 190 ∙ 단골 1,821 ∙ 꽃집/꽃배달</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 세 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_03.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">윤씨네 즉석두부</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">✅주문및배달시간✅ 전날오후1시이후~당일오후12시반까지➡️당일 약13:00~15:00쯤 배달🙏 가게 상황에 따라 변경될수있어요🙏 특정사유로 다른 시간 배달 원할시엔 문의주세요😊</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 433 ∙ 단골 2,022 ∙ 즉석판매제조가공업</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 네 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_04.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">훈민용달,이사,용달이사 화물</span>
+                                        <span class="dongne_all_item_region">화곡동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">훈민용달은 예약제로 운행되고 있습니다. 물건,지역,엘베유.무, 층수 도와주실분 유.무를 알려주시면 빠르게 견적을 답변드릴수 있습니다. 작업중 답변이 느릴수도 있는점 양해 바랍니다.</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 2,166 ∙ 단골 4,385 ∙ 용달이사/용달화물</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 다섯 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_05.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">씨유네일</span>
+                                        <span class="dongne_all_item_region">독산동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">_see_u_nail 인스타👋 🤎네일아트 3인동시 시술가능</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 401 ∙ 단골 901 ∙ 네일샵</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 여섯 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_06.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">도로플라워</span>
+                                        <span class="dongne_all_item_region">거제동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">도로행복 꽃 배송 연제구 동래구 부산진구 금정구 수영구 남구 무료배송! 매주 꽃구성이 변경되어 현관문앞 배송해드립니다</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 477 ∙ 단골 2,745 ∙ 꽃집/꽃배달</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 일곱 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_07.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">영클린 홈케어</span>
+                                        <span class="dongne_all_item_region">서현동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">에어컨청소 깨끗하게 해드려요 친환경 세재사용, 고압세척하여 곰팡이 세균을 완벽하게 제거합니다.</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 803 ∙ 단골 1,873 ∙ 에어컨청소</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 여덟 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_08.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">마포방구석스트링어</span>
+                                        <span class="dongne_all_item_region">도화동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">* 테니스 스트링 교체 전문으로 합니다!! * 꼼꼼한 작업/적정 텐션 유지/저렴한 가격 * 방문 전 꼭! 미리 당근으로 채팅 or 전화주세요. *</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 91 ∙ 단골 190 ∙ 운동/경기용품</span>
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- '식당' 탭 영역 -->
-                <div id="tab2" class="tab__content"></div>
+                <div id="dongne_tab2" class="dongne_tab__content">
+                    <ul class="dongne_list_all">
+                        <!-- 첫 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_11.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">오떡순</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">안녕하세요 신원시장 오떡순입니다 ^^</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 311 ∙ 단골 1,920 ∙ 떡볶이전문</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 두 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_12.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">내게담다 한과</span>
+                                        <span class="dongne_all_item_region">원창동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">우리는 설탕 듬뿍인 빵과 과자가 싫습니다. 우리는 건강 가득한 떡과 한과가 좋습니다. 우리는 고향의 맛, 한과 및 떡을 소개합니다.</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 93 ∙ 단골 3,690 ∙ 한과</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 세 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_13.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">명성왕족발</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">✅주문및배달시간✅ 전날오후1시이후~당일오후12시반까지➡️당일 약13:00~15:00쯤 배달🙏 가게 상황에 따라 변경될수있어요🙏 특정사유로 다른 시간 배달 원할시엔 문의주세요😊</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 144 ∙ 단골 801 ∙ 족발/보쌈</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 네 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_14.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">정김밥</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">음식은 정성입니다!!! 정김밥은 정직한 재료로 정갈한 김밥을 고집합니다~~ 김밥 맛집은 정김밥 요기요^^</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 205 ∙ 단골 1,189 ∙ 분식</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 다섯 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_11.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">오떡순</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">안녕하세요 신원시장 오떡순입니다 ^^</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 311 ∙ 단골 1,920 ∙ 떡볶이전문</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 여섯 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_12.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">내게담다 한과</span>
+                                        <span class="dongne_all_item_region">원창동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">우리는 설탕 듬뿍인 빵과 과자가 싫습니다. 우리는 건강 가득한 떡과 한과가 좋습니다. 우리는 고향의 맛, 한과 및 떡을 소개합니다.</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 93 ∙ 단골 3,690 ∙ 한과</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 일곱 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_13.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">명성왕족발</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">✅주문및배달시간✅ 전날오후1시이후~당일오후12시반까지➡️당일 약13:00~15:00쯤 배달🙏 가게 상황에 따라 변경될수있어요🙏 특정사유로 다른 시간 배달 원할시엔 문의주세요😊</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 144 ∙ 단골 801 ∙ 족발/보쌈</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 여덟 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_14.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">정김밥</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">음식은 정성입니다!!! 정김밥은 정직한 재료로 정갈한 김밥을 고집합니다~~ 김밥 맛집은 정김밥 요기요^^</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 205 ∙ 단골 1,189 ∙ 분식</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <!-- '카페' 탭 영역 '-->
-                <div id="tab3" class="tab__content"></div>
+                <div id="dongne_tab3" class="dongne_tab__content">
+                    <ul class="dongne_list_all">
+                        <!-- 첫 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_21.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test1</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">안녕하세요 신원시장 오떡순입니다 ^^</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 311 ∙ 단골 1,920 ∙ 떡볶이전문</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 두 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_22.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test2</span>
+                                        <span class="dongne_all_item_region">가락1동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">✅ 신선한 생화를 저렴한 가격에 다양한 장소에서 픽업하실수 있습니다. (매장,역앞,공원앞,케이크집 등)</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 190 ∙ 단골 1,821 ∙ 꽃집/꽃배달</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 세 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_23.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test3</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">✅주문및배달시간✅ 전날오후1시이후~당일오후12시반까지➡️당일 약13:00~15:00쯤 배달🙏 가게 상황에 따라 변경될수있어요🙏 특정사유로 다른 시간 배달 원할시엔 문의주세요😊</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 433 ∙ 단골 2,022 ∙ 즉석판매제조가공업</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 네 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_24.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test4</span>
+                                        <span class="dongne_all_item_region">화곡동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">훈민용달은 예약제로 운행되고 있습니다. 물건,지역,엘베유.무, 층수 도와주실분 유.무를 알려주시면 빠르게 견적을 답변드릴수 있습니다. 작업중 답변이 느릴수도 있는점 양해 바랍니다.</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 2,166 ∙ 단골 4,385 ∙ 용달이사/용달화물</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 다섯 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_21.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test5</span>
+                                        <span class="dongne_all_item_region">독산동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">_see_u_nail 인스타👋 🤎네일아트 3인동시 시술가능</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 401 ∙ 단골 901 ∙ 네일샵</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 여섯 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_22.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test6</span>
+                                        <span class="dongne_all_item_region">거제동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">도로행복 꽃 배송 연제구 동래구 부산진구 금정구 수영구 남구 무료배송! 매주 꽃구성이 변경되어 현관문앞 배송해드립니다</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 477 ∙ 단골 2,745 ∙ 꽃집/꽃배달</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 일곱 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_23.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test7</span>
+                                        <span class="dongne_all_item_region">서현동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">에어컨청소 깨끗하게 해드려요 친환경 세재사용, 고압세척하여 곰팡이 세균을 완벽하게 제거합니다.</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 803 ∙ 단골 1,873 ∙ 에어컨청소</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 여덟 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_24.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test8</span>
+                                        <span class="dongne_all_item_region">도화동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">* 테니스 스트링 교체 전문으로 합니다!! * 꼼꼼한 작업/적정 텐션 유지/저렴한 가격 * 방문 전 꼭! 미리 당근으로 채팅 or 전화주세요. *</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 91 ∙ 단골 190 ∙ 운동/경기용품</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <!-- '용달/이사' 영역 -->
-                <div id="tab4" class="tab__content"></div>
+                <div id="dongne_tab4" class="dongne_tab__content">
+                    <ul class="dongne_list_all">
+                        <!-- 첫 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_31.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test1</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">안녕하세요 신원시장 오떡순입니다 ^^</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 311 ∙ 단골 1,920 ∙ 떡볶이전문</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 두 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_32.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test2</span>
+                                        <span class="dongne_all_item_region">가락1동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">✅ 신선한 생화를 저렴한 가격에 다양한 장소에서 픽업하실수 있습니다. (매장,역앞,공원앞,케이크집 등)</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 190 ∙ 단골 1,821 ∙ 꽃집/꽃배달</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 세 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_33.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test3</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">✅주문및배달시간✅ 전날오후1시이후~당일오후12시반까지➡️당일 약13:00~15:00쯤 배달🙏 가게 상황에 따라 변경될수있어요🙏 특정사유로 다른 시간 배달 원할시엔 문의주세요😊</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 433 ∙ 단골 2,022 ∙ 즉석판매제조가공업</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 네 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_34.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test4</span>
+                                        <span class="dongne_all_item_region">화곡동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">훈민용달은 예약제로 운행되고 있습니다. 물건,지역,엘베유.무, 층수 도와주실분 유.무를 알려주시면 빠르게 견적을 답변드릴수 있습니다. 작업중 답변이 느릴수도 있는점 양해 바랍니다.</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 2,166 ∙ 단골 4,385 ∙ 용달이사/용달화물</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 다섯 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_31.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test5</span>
+                                        <span class="dongne_all_item_region">독산동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">_see_u_nail 인스타👋 🤎네일아트 3인동시 시술가능</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 401 ∙ 단골 901 ∙ 네일샵</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 여섯 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_32.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test6</span>
+                                        <span class="dongne_all_item_region">거제동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">도로행복 꽃 배송 연제구 동래구 부산진구 금정구 수영구 남구 무료배송! 매주 꽃구성이 변경되어 현관문앞 배송해드립니다</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 477 ∙ 단골 2,745 ∙ 꽃집/꽃배달</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 일곱 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_33.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test7</span>
+                                        <span class="dongne_all_item_region">서현동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">에어컨청소 깨끗하게 해드려요 친환경 세재사용, 고압세척하여 곰팡이 세균을 완벽하게 제거합니다.</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 803 ∙ 단골 1,873 ∙ 에어컨청소</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 여덟 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_34.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test8</span>
+                                        <span class="dongne_all_item_region">도화동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">* 테니스 스트링 교체 전문으로 합니다!! * 꼼꼼한 작업/적정 텐션 유지/저렴한 가격 * 방문 전 꼭! 미리 당근으로 채팅 or 전화주세요. *</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 91 ∙ 단골 190 ∙ 운동/경기용품</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <!-- '뷰티/미용' 영역 -->
-                <div id="tab5" class="tab__content"></div>
+                <div id="dongne_tab5" class="dongne_tab__content">
+                    <ul class="dongne_list_all">
+                        <!-- 첫 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_41.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test1</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">안녕하세요 신원시장 오떡순입니다 ^^</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 311 ∙ 단골 1,920 ∙ 떡볶이전문</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 두 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_42.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test2</span>
+                                        <span class="dongne_all_item_region">가락1동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">✅ 신선한 생화를 저렴한 가격에 다양한 장소에서 픽업하실수 있습니다. (매장,역앞,공원앞,케이크집 등)</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 190 ∙ 단골 1,821 ∙ 꽃집/꽃배달</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 세 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_43.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test3</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">✅주문및배달시간✅ 전날오후1시이후~당일오후12시반까지➡️당일 약13:00~15:00쯤 배달🙏 가게 상황에 따라 변경될수있어요🙏 특정사유로 다른 시간 배달 원할시엔 문의주세요😊</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 433 ∙ 단골 2,022 ∙ 즉석판매제조가공업</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 네 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_44.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test4</span>
+                                        <span class="dongne_all_item_region">화곡동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">훈민용달은 예약제로 운행되고 있습니다. 물건,지역,엘베유.무, 층수 도와주실분 유.무를 알려주시면 빠르게 견적을 답변드릴수 있습니다. 작업중 답변이 느릴수도 있는점 양해 바랍니다.</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 2,166 ∙ 단골 4,385 ∙ 용달이사/용달화물</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 다섯 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_41.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test5</span>
+                                        <span class="dongne_all_item_region">독산동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">_see_u_nail 인스타👋 🤎네일아트 3인동시 시술가능</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 401 ∙ 단골 901 ∙ 네일샵</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 여섯 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_42.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test6</span>
+                                        <span class="dongne_all_item_region">거제동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">도로행복 꽃 배송 연제구 동래구 부산진구 금정구 수영구 남구 무료배송! 매주 꽃구성이 변경되어 현관문앞 배송해드립니다</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 477 ∙ 단골 2,745 ∙ 꽃집/꽃배달</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 일곱 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_43.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test7</span>
+                                        <span class="dongne_all_item_region">서현동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">에어컨청소 깨끗하게 해드려요 친환경 세재사용, 고압세척하여 곰팡이 세균을 완벽하게 제거합니다.</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 803 ∙ 단골 1,873 ∙ 에어컨청소</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 여덟 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_44.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test8</span>
+                                        <span class="dongne_all_item_region">도화동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">* 테니스 스트링 교체 전문으로 합니다!! * 꼼꼼한 작업/적정 텐션 유지/저렴한 가격 * 방문 전 꼭! 미리 당근으로 채팅 or 전화주세요. *</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 91 ∙ 단골 190 ∙ 운동/경기용품</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <!-- '헬스/필라테스/요가' 영역 -->
-                <div id="tab6" class="tab__content"></div>
+                <div id="dongne_tab6" class="dongne_tab__content">
+                    <ul class="dongne_list_all">
+                        <!-- 첫 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_51.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test1</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">안녕하세요 신원시장 오떡순입니다 ^^</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 311 ∙ 단골 1,920 ∙ 떡볶이전문</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 두 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_52.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test2</span>
+                                        <span class="dongne_all_item_region">가락1동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">✅ 신선한 생화를 저렴한 가격에 다양한 장소에서 픽업하실수 있습니다. (매장,역앞,공원앞,케이크집 등)</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 190 ∙ 단골 1,821 ∙ 꽃집/꽃배달</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 세 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_53.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test3</span>
+                                        <span class="dongne_all_item_region">신림동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">✅주문및배달시간✅ 전날오후1시이후~당일오후12시반까지➡️당일 약13:00~15:00쯤 배달🙏 가게 상황에 따라 변경될수있어요🙏 특정사유로 다른 시간 배달 원할시엔 문의주세요😊</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 433 ∙ 단골 2,022 ∙ 즉석판매제조가공업</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 네 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_54.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test4</span>
+                                        <span class="dongne_all_item_region">화곡동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">훈민용달은 예약제로 운행되고 있습니다. 물건,지역,엘베유.무, 층수 도와주실분 유.무를 알려주시면 빠르게 견적을 답변드릴수 있습니다. 작업중 답변이 느릴수도 있는점 양해 바랍니다.</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 2,166 ∙ 단골 4,385 ∙ 용달이사/용달화물</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 다섯 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_51.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test5</span>
+                                        <span class="dongne_all_item_region">독산동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">_see_u_nail 인스타👋 🤎네일아트 3인동시 시술가능</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 401 ∙ 단골 901 ∙ 네일샵</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 여섯 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_52.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test6</span>
+                                        <span class="dongne_all_item_region">거제동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">도로행복 꽃 배송 연제구 동래구 부산진구 금정구 수영구 남구 무료배송! 매주 꽃구성이 변경되어 현관문앞 배송해드립니다</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 477 ∙ 단골 2,745 ∙ 꽃집/꽃배달</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 일곱 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_53.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test7</span>
+                                        <span class="dongne_all_item_region">서현동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">에어컨청소 깨끗하게 해드려요 친환경 세재사용, 고압세척하여 곰팡이 세균을 완벽하게 제거합니다.</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 803 ∙ 단골 1,873 ∙ 에어컨청소</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 여덟 번째 가게 네모 한 칸 시작 -->
+                        <li class="dongne_list_all_item">
+                            <a class="dongne_list_all_item_a" href="#">
+                                <div class="dongne_all_item_thumbnail">
+                                    <!-- 가게 썸네일 -->
+                                    <img src="../../images/nearby-stores/dongne_all_54.jpeg">
+                                </div>
+                                <div class="dongne_all_item_content">
+                                    <!-- 가게 이름 줄 -->
+                                    <div class="dongne_all_item_name-wrapper">
+                                        <span class="dongne_all_item_name">test8</span>
+                                        <span class="dongne_all_item_region">도화동</span>
+                                    </div>
+                                    <!-- 가게 세부 설명 줄 -->
+                                    <span class="dongne_all_item_description">* 테니스 스트링 교체 전문으로 합니다!! * 꼼꼼한 작업/적정 텐션 유지/저렴한 가격 * 방문 전 꼭! 미리 당근으로 채팅 or 전화주세요. *</span>
+                                    <!-- 가게 부가 정보 줄 -->
+                                    <span class="dongne_all_item_info">후기 91 ∙ 단골 190 ∙ 운동/경기용품</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
     <!-- 동네업체 섹션 끝 -->
 </body>
+
 </html>
