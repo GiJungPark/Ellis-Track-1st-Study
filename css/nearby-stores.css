@@ -12,6 +12,7 @@ a {
     padding: 50px 0 0;
     margin: 64px 0 72px;
 }
+
 .main_banner_container {
     width: 768px;
     margin:0 auto;
@@ -51,23 +52,25 @@ a {
 }
 
 .dongne_tab {
+    min-width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    font-size: 14px;
 }
 
 .dongne_tab__item {
-    padding: 0.6rem 1.3rem;
-    margin-right: 1rem;
+    padding: 0.6rem 0.7rem;
+    margin-right: 0.4rem;
     border: 1px solid #ddd;
     border-radius: 2rem;
 }
 
 .dongne_tab__item.active {
     display: inline-block;
-    border: 1px solid #212124;
-    background-color: #212124;
+    border: 1px solid #4D5159;
+    background-color: #4D5159;
     color: #fff;
 }
 
