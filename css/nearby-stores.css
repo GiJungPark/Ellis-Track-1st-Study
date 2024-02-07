@@ -27,6 +27,20 @@ a {
     line-height: 1.5;
     font-size: 2rem;
 }
+
+.dongne_all_item_region {
+    color: #868B94;
+}
+.dongne_all_item_description {
+    display: inline-block;
+    margin: 4px 0 0;
+}
+
+.dongne_all_item_info {
+    display: inline-block;
+    margin: 6px 0 0;
+}
+
 /* 메인 배너 끝 */
 
 /* 동네업체 섹션 시작 */
@@ -43,33 +57,58 @@ a {
     padding: 1rem;
 }
 
-.tab__item {
+.dongne_tab__item {
     padding: 0.6rem 1.3rem;
     margin-right: 1rem;
     border: 1px solid #ddd;
     border-radius: 2rem;
 }
 
-.tab__item.active {
+.dongne_tab__item.active {
     display: inline-block;
     border: 1px solid #212124;
     background-color: #212124;
     color: #fff;
 }
 
-.tab__content-wrapper {
+.dongne_tab__content-wrapper {
     padding: 1rem;
 }
 
-.tab__content {
-    /* display: none; */
+.dongne_tab__content {
+    display: none;
 }
 
-.tab__content.active {
+.dongne_tab__content.active {
     display: block;
+}
+
+.dongne_list_all {
+    width: 768px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.dongne_list_all_item {
+    width: 368px;
+    height: 112px;
+}
+.dongne_list_all_item_a {
+    width: 368px;
+    height: 112px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .dongne_all_item_thumbnail img {
     width: 78px;
+    height: 78px;
+    border-radius: 50%;
+}
+
+.dongne_all_item_content {
+    width: 240px;
     height: 78px;
 }

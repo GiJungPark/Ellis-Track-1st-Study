@@ -34,7 +34,7 @@ function applyDynamicCSS() {
     var currentPagePath = getCurrentPagePath();
 
     // 중고거래 페이지인 경우
-    if (currentPagePath.includes('/contents/fleamarket/index.html')) {
+    if (currentPagePath.includes('/contents/fleamarket')) {
         var button = document.getElementById('fleamarketButton');
         if (button) {
             button.classList.remove('header_menu');
@@ -43,7 +43,7 @@ function applyDynamicCSS() {
     }
 
     // 중고거래 추가 페이지인 경우
-    if (currentPagePath.includes('/contents/fleamarket_details/index.html')) {
+    if (currentPagePath.includes('/contents/fleamarket_details')) {
         var button = document.getElementById('fleamarketButton');
         if (button) {
             button.classList.remove('header_menu');
@@ -52,7 +52,7 @@ function applyDynamicCSS() {
     }
 
     // 동네 업체 페이지인 경우
-    if (currentPagePath.includes('/contents/nearby-stores/index.html')) {
+    if (currentPagePath.includes('/contents/nearby-stores')) {
         var button = document.getElementById('nearbyStoresButton');
         if (button) {
             button.classList.remove('header_menu');
@@ -61,7 +61,7 @@ function applyDynamicCSS() {
     }
 
     // 알바 페이지인 경우
-    if (currentPagePath.includes('/contents/jobs/index.html')) {
+    if (currentPagePath.includes('/contents/jobs')) {
         var button = document.getElementById('jobsButton');
         if (button) {
             button.classList.remove('header_menu');
@@ -70,7 +70,7 @@ function applyDynamicCSS() {
     }
 
     // 부동산 직거래 페이지인 경우
-    if (currentPagePath.includes('/contents/realty/index.html')) {
+    if (currentPagePath.includes('/contents/realty')) {
         var button = document.getElementById('realtyButton');
         if (button) {
             button.classList.remove('header_menu');
@@ -79,7 +79,7 @@ function applyDynamicCSS() {
     }
 
     // 중고차 직거래 페이지인 경우
-    if (currentPagePath.includes('/contents/car/index.html')) {
+    if (currentPagePath.includes('/contents/car')) {
         var button = document.getElementById('carButton');
         if (button) {
             button.classList.remove('header_menu');
