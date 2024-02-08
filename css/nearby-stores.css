@@ -1,3 +1,10 @@
+:root {
+    --dongne-color-static-beige01: #f7f1eb;
+    --dongne-color-static-carrot01: #FF6F0F;
+    --dongne-color-static-text-gray01: #868B94;
+    --dongne-color-static-tab-gray01: #4D5159;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -5,7 +12,7 @@ a {
 
 /* 메인 배너 시작 */
 .main_banner {
-    background-color: #f7f1eb;
+    background-color: var(--dongne-color-static-beige01);
     display: block;
     width: 100%;
     height: 265px;
@@ -15,7 +22,7 @@ a {
 
 .main_banner_container {
     width: 768px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .main_banner_img {
@@ -30,7 +37,7 @@ a {
 }
 
 .dongne_all_item_region {
-    color: #868B94;
+    color: var(--dongne-color-static-text-gray01);
 }
 .dongne_all_item_description {
     display: inline-block;
@@ -46,6 +53,7 @@ a {
 
 /* 동네업체 섹션 시작 */
 .dongne_title {
+    margin: 0 0 32px;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
@@ -69,8 +77,8 @@ a {
 
 .dongne_tab__item.active {
     display: inline-block;
-    border: 1px solid #4D5159;
-    background-color: #4D5159;
+    border: 1px solid var(--dongne-color-static-tab-gray01);
+    background-color: var(--dongne-color-static-tab-gray01);
     color: #fff;
 }
 
@@ -115,3 +123,120 @@ a {
     width: 240px;
     height: 78px;
 }
+/* 동네업체 섹션 끝 */
+
+/* 이웃후기 섹션 시작 */
+.dongne_review_container {
+    width: 768px;
+    margin: 0 auto;
+}
+
+.dongne_review_list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.dongne_review_list_item {
+    width: 322px;
+    padding: 20px 16px;
+    border-radius: 0.375rem;
+    border: 0.0625rem solid #EAEBEE;
+    margin: 0 1rem 1rem 0;
+}
+
+.dongne_review_card_writer {
+    height: 41px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dongne_review_card_writer_thumbnail img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.dongne_review_card_writer_info {
+    padding: 0 0 0 10px;
+}
+
+.dongne_review_card_writer_info_dangol {
+    display: none;
+}
+
+.dongne_review_card_writer_info_name {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.dongne_review_card_writer_info_dangol.active {
+    display: inline;
+    width: auto;
+    background-color: var(--dongne-color-static-carrot01);
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 100px;
+    padding: 0.125rem 0.25rem;
+    line-height: 1.35;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.dongne_review_card_writer_info_location {
+    color: var(--dongne-color-static-text-gray01);
+    font-size: 0.8rem;
+}
+
+.dongne_review_card_detail {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.4;
+    max-height: 2.4;
+    margin: 0.375rem 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: normal;
+}
+
+.dongne_review_card_store_info {
+    margin: 0.6rem 0 0;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    border: 0.0625rem solid #EAEBEE;
+}
+
+.dongne_review_card_store_info img {
+    float: left;
+    width: 62px;
+    height: 62px;
+}
+
+.dongne_review_card_store_text {
+    padding: 6px 16px 6px 14px;
+}
+
+.dongne_review_card_store_source,
+.dongne_review_card_store_detail {
+    display: block;
+    font-size: 1rem;
+}
+
+.dongne_review_card_store_source {
+    font-size: 1rem;
+    height: 22px;
+}
+
+.dongne_review_card_store_detail {
+    font-size: .813rem;
+    height: 20px;
+    color: var(--dongne-color-static-text-gray01);
+}
+
+/* 이웃후기 섹션 끝 */
