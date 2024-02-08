@@ -18,7 +18,7 @@ modalOpen.addEventListener('click',function(){
 
 //열기 버튼을 눌렀을 때 모달팝업이 열림
 modalOpen2.addEventListener('click', function () {
-    modal.classList.add('on');
+    modal.style.display = 'block';
     scrollPosition = window.pageYOffset;
     body.style.overflow = 'hidden';
     body.style.position = 'fixed';
