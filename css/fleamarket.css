@@ -131,9 +131,24 @@ ul {
 }
 
 .cover-img {
+    display: flex;
     width: 416px;
     height: 315px;
+}
 
+@Media screen and (max-width: 768px) {
+    .cover-img {
+        display: none;
+    }
+
+    .cover-title1 {
+        font-size: 26px;
+        margin: -25px 0 0 -115px;
+    }
+
+    .cover-title2 {
+        display: none;
+    }
 }
 
 .main_page1 {
