@@ -67,8 +67,9 @@ body {
 .main .main1 .main1_image {
     text-align: center;
     position: relative;
+    width:600px;
     top: -241px;
-    left: 300px;
+    left: 700px;
 
 }
 
