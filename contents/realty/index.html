@@ -12,6 +12,9 @@
     <!-- include 함수 가져오기 -->
     <script src="../../script/includeHTML.js"></script>
 
+    <!-- includeFooter 함수 가져오기 -->
+    <script src="../../script/includeFooter.js"></script>
+
 </head>
 
 
@@ -21,8 +24,6 @@
     <script>includeHTML();</script>
     <!-- 내비게이션 바 가져오기 끝 -->
 
-
-    
 
     <section class="realty">
         <div class="realty_head">
@@ -188,10 +189,12 @@
         </div>
     </section>
 
-        
+    <div class="realty-footer">
+    <!-- 푸터 가져오기 시작 -->
+    <div includeFooter-html="../../common/footer.html"></div>
+    <script>includeFooter();</script>
+    <!-- 푸터 가져오기 끝 -->
+    <div>
 
-    
-
-    
 </body>
 </html>

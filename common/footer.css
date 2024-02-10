@@ -1,0 +1,430 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    outline: none;
+}
+
+section,
+article,
+aside,
+footer,
+header,
+nav,
+hgroup {
+    display: block;
+}
+
+a {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+.footer-body {
+    position: relative;
+    color: #212529;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    min-height: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+/*초기화*/
+
+/* footer-section */
+
+#footer-root .executives-names {
+    display: flex;
+    align-items: center
+}
+
+#footer-root .executives-names span {
+    color: #868B94;
+}
+
+#footer-root .executives-names span b {
+    color: #868B94;
+}
+
+#footer-root .executives-info div {
+    color: #868B94;
+}
+
+#footer-root .executives-info div b {
+    color: #868B94;
+}
+
+#footer-root .company-address span {
+    color: #868B94;
+}
+
+#footer-root ._1s38h9c1 {
+    display: flex;
+    justify-content: center
+}
+
+#footer-root ._1s38h9c2 {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent
+}
+
+#footer-root ._1s38h9c3 {
+    appearance: none;
+    border: 0;
+    background: none;
+    padding: 0
+}
+
+#footer-root ._1s38h9c4 {
+    text-decoration: none
+}
+
+#footer-root ._1s38h9c5 {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+#footer-root ._1y9kelh0 {
+    background-color: #ffffff;
+    padding: 0 1.6rem 2rem
+}
+
+#footer-root ._1y9kelh0:not(:last-child) {
+    margin-bottom: 0.8rem
+}
+
+#footer-root ._1y9kelh1 {
+    font-weight: 700;
+    line-height: 1.36;
+    font-size: 1.6rem;
+    padding: 1.6rem 0
+}
+
+#footer-root .max-width-container {
+    max-width: 76.8rem;
+    margin: 0 auto
+}
+
+@media screen and (min-width: 768px) {
+    #footer-root ._1y9kelh0 {
+        padding:0
+    }
+
+    #footer-root ._1y9kelh0:not(:last-child) {
+        margin-bottom: 5.6rem
+    }
+
+    #footer-root ._1y9kelh1 {
+        line-height: 1.3;
+        font-size: 2rem;
+    }
+}
+
+#footer-root .footer-container {
+    background-color: #ffffff;
+    color: #212124;
+    border-top: 1px solid #eaebee;
+    padding: 0 1.6rem;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100vw
+}
+
+#footer-root .footer-content {
+    display: flex;
+    flex-direction: column
+}
+
+#footer-root .download-section {
+    display: flex;
+    margin-bottom: 2rem
+}
+
+#footer-root .download-option {
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.3008rem
+}
+
+#footer-root .download-link {
+    display: flex;
+    margin-left: 2.4rem
+}
+
+#footer-root .download-link:not(:first-child) {
+    margin-left: 1.6rem
+}
+
+#footer-root .download-text {
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.3008rem;
+    color: #212124;
+    margin-right: 0.8rem
+}
+
+#footer-root .download-icon {
+    color: #212124;
+    margin-right: 0.6rem
+}
+
+#footer-root .download-option-flex {
+    display: flex
+}
+
+#footer-root .download-badge {
+    display: none
+}
+
+#footer-root .download-badge>svg>rect {
+    fill: #f2f3f6
+}
+
+#footer-root .download-badge>svg>path {
+    fill: #212124
+}
+
+#footer-root .download-badge:hover>svg>path {
+    opacity: .5
+}
+
+#footer-root .footer-navigation {
+    line-height: 1.5;
+    font-size: 1.3008rem;
+    display: flex;
+    max-width: 76.8rem
+}
+
+#footer-root .footer-list {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start:0;margin-block-start:0;margin-block-end:0;width: 33%
+}
+
+#footer-root .footer-list:last-child {
+    margin-right: 15%
+}
+
+#footer-root .company-info {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2
+}
+
+#footer-root .executives-info {
+    line-height: 1.3;
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+    flex-wrap: wrap;
+    color: #868b94
+}
+
+#footer-root .separator {
+    margin: 0 0.4rem 0 0.4rem
+}
+
+#footer-root .company-address {
+    font-style: normal
+}
+
+#footer-root .company-address .separator {
+    margin: 0 0.1rem 0 0;
+}
+
+#footer-root .terms-of-service {
+    flex-wrap: wrap;
+    display: flex;
+    grid-column: 1 / 4
+}
+
+#footer-root .footer-link-text {
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    color: #868b94
+}
+
+#footer-root .footer-link-text:not(:last-child) {
+    margin-right: 1.3rem
+}
+
+#footer-root .footer-link-text:hover {
+    text-decoration: underline
+}
+
+#footer-root .footer-link-text-bold {
+    color: #4d5159
+}
+
+#footer-root .footer-top {
+    padding: 4.8rem 0
+}
+
+#footer-root .footer-bottom {
+    display: grid;
+    padding: 2.4rem 0 10rem;
+    border-top: 1px solid #eaebee
+}
+
+#footer-root .contact-links {
+    margin-bottom: 1.6rem
+}
+
+#footer-root .footer-social-media {
+    margin-top: 2.4rem;
+    display: flex;
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4
+}
+
+#footer-root .social-media-link {
+    padding-top: 0.4rem
+}
+
+#footer-root .social-media-link:hover {
+    opacity: 64%
+}
+
+#footer-root .language-label {
+    color: #868b94;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    cursor: pointer
+}
+
+#footer-root .language-label:hover {
+    background-color: #f2f3f6
+}
+
+#footer-root .label-select-option {
+    background-color: #ffffff;
+    color: #868b94;
+    padding-left: 0.4rem;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.1rem;
+    cursor: pointer
+}
+
+#footer-root .label-select-option:focus {
+    outline: 0
+}
+
+#footer-root .label-select-option:hover {
+    background-color: #f2f3f6
+}
+
+#footer-root .footer-link-color {
+    text-decoration: none;
+    outline: 0
+}
+
+#footer-root .download-option>.footer-link-color {
+    color: #212124
+}
+
+#footer-root .footer-navigation .footer-link-color {
+    color: #212124
+}
+
+#footer-root .footer-social-media>.footer-link-color:not(:last-child) {
+    margin-right: 1.6rem
+}
+
+#footer-root .footer-item {
+    width: fit-content;
+    list-style: none
+}
+
+#footer-root .footer-list .footer-item:not(:last-child) {
+    margin-bottom: 1.6rem
+}
+
+#footer-root .footer-list .footer-item:hover {
+    text-decoration: underline
+}
+
+@media screen and (min-width: 768px) {
+    #footer-root .download-section {
+        float:right;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column
+    }
+
+    #footer-root .download-option {
+        line-height: 1.4;
+        font-size: 1.4rem
+    }
+
+    #footer-root .download-link {
+        margin-top: 0.8rem;
+        margin-left: 0
+    }
+
+    #footer-root .download-link:not(:first-child) {
+        margin-left: 1rem
+    }
+
+    #footer-root .download-text {
+        line-height: 1.4;
+        font-size: 1.4rem;
+        display: none
+    }
+
+    #footer-root .download-icon {
+        display: none
+    }
+
+    #footer-root .download-badge {
+        display: block
+    }
+
+    #footer-root .footer-navigation {
+        line-height: 1.4;
+        font-size: 1.4rem
+    }
+
+    #footer-root .executives-info,#footer-root .footer-link-text {
+        line-height: 1.5;
+        font-size: 1.3008rem
+    }
+
+    #footer-root .footer-bottom {
+        display: grid;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+
+    #footer-root .footer-social-media {
+        margin-top: 0;
+        grid-column: 3 / 4;
+        grid-row: 1 / 2
+    }
+}
