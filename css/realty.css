@@ -201,10 +201,11 @@ header {
     font-size: 26px;
     line-height: 1.5;
     font-weight: 900;
-    padding: 60px 0 15px 350px;
-    text-align: left;
+    padding: 60px 0 15px 0;
     width: 750px;
-    text-align: center;
+    text-align: left;
+    align-items: center;
+    margin: 0 auto;
 }
 .realty_post_contents {
     display: grid;
@@ -213,7 +214,7 @@ header {
     column-gap: 20px;
     text-align: left;
     width: 750px;
-    margin: 0 0 0 570px;
+    margin: 0 auto;
 }
 .realty_post_contents_1{
     height:110px;
