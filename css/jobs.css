@@ -22,9 +22,16 @@ body {
 /* 메인메뉴 위쪽 그림부분 */
 
 .main .main1 {
+    width: 100%;
     height: 315px;
     background-color:#ffe2d2;
-    position:relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main1_container {
+    width: 750px;
 }
 
 .main .main1 .main_content{
@@ -65,12 +72,9 @@ body {
 }
 
 .main .main1 .main1_image {
-    text-align: center;
-    position: relative;
-    width:600px;
-    top: -241px;
-    left: 700px;
-
+    position: absolute;
+    top: 3%;
+    left: 45%;
 }
 
 .main .main1  .main1_image img {
@@ -104,21 +108,6 @@ body {
     .main .main1 .main_content button {
         margin: 2rem 0 0; /* 마진 조절 */
         font-size: 12px; /* 글자 크기 축소 */
-    }
-
-    .main .main1 .main1_image {
-        top: 0; /* 위치 조절 */
-        left: 50%; /* 수평 가운데 정렬 */
-        transform: translateX(-50%);
-    }
-
-    .main .main1 .main1_image img {
-        text-align: center;
-        position: relative;
-        top:-15px;
-        left:50px;
-        width: 470px;
-        height: 200px;
     }
 }
 
