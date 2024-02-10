@@ -103,8 +103,8 @@ a {
 .dongne_list_all_item {
     width: 364px;
     height: auto;
+    padding-bottom: 40px;
     border-bottom: 1px solid var(--dongne-color-static-border-gray01);
-    padding: 0px 0 45px 0;
 }
 
 .dongne_list_all_item:last-child, .dongne_list_all_item:nth-last-child(2) {
@@ -114,6 +114,11 @@ a {
 .dongne_list_all_item_a {
     display: flex;
     flex-wrap: flex;
+    padding: 10px 10px 25px 10px;
+}
+
+.dongne_list_all_item_a:hover {
+    background-color: #F2F3F6;
 }
 
 .dongne_all_item_thumbnail img {
@@ -195,6 +200,10 @@ a {
     padding: 20px 16px;
     border-radius: 0.5rem;
     border: 0.1rem solid #EAEBEE;
+}
+
+.dongne_review_list_item:hover {
+    background-color: #F2F3F6;
 }
 
 .dongne_review_card_writer {
