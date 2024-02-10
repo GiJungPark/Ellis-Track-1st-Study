@@ -70,6 +70,10 @@ a {
     white-space: nowrap;
 }
 
+.dongne_tab__item:hover {
+    background-color: #F2F3F6;
+}
+
 .dongne_tab__item.active {
     display: inline-block;
     border: 1px solid var(--dongne-color-static-tab-gray01);
