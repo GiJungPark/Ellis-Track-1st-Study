@@ -205,7 +205,6 @@ a {
     margin: 0.6rem 0 0;
     border-radius: 0.375rem;
     overflow: hidden;
-    display: flex;
     align-items: center;
     vertical-align: middle;
     flex-wrap: wrap;
@@ -230,13 +229,64 @@ a {
 
 .dongne_review_card_store_source {
     font-size: 1rem;
-    height: 22px;
 }
 
 .dongne_review_card_store_detail {
     font-size: .813rem;
-    height: 20px;
     color: var(--dongne-color-static-text-gray01);
 }
 
 /* 이웃후기 섹션 끝 */
+
+/* 하단 비즈 배너 섹션 시작 */
+.dongne_biz_wrapper {
+    width: 714px;
+    height: 72px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 70px auto;
+    padding: 24px 22px 24px 32px;
+    background-color: #FEF7EB;
+    display: flex;
+    align-items: center;
+}
+
+.dongne_biz_wrapper img {
+    width: 72px;
+    height: 72px;
+    float: left;
+    margin: 0;
+}
+
+.dongne_biz_wrapper_text {
+    width: 437px;
+    padding: 0 0 0 32px;
+}
+
+.dongne_biz_title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 9px 0;
+}
+
+.dongne_biz_detail {
+    font-size: 1.5rem;
+}
+
+.dongne_biz_create {
+    width: 150px;
+    height: 35px;
+    float: left;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FE6F0F;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    margin: 0 0 0 12px;
+}
+
+/* 하단 비즈 배너 섹션 끝 */
